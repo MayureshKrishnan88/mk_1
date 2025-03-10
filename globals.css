@@ -1,0 +1,51 @@
+/* Light Mode Variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #283593; /* Navy Blue */
+  --secondary: #F0F0F0; /* Light Grey */
+  --accent: #FFD700; /* Golden Yellow */
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Button Styles */
+button {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--accent);
+  color: black;
+}
+
+/* Input Field */
+input {
+  padding: 10px;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 280px;
+}
